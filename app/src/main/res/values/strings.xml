@@ -6,6 +6,6 @@
         <string name="device_not_supported_message">Ffmpeg is not supported on your device</string>
         <string name="empty_command_toast">You cannot execute empty command</string>
         <string name="empty_command_toast1">Please enter args</string>
-        <string name="https_url">https://video.twimg.com/ext_tw_video/1637717820829040640/pu/pl/320x320/n4bRQzkHKNs3Pz08.m3u8?container=fmp4</string>
+        <string name="https_">https://video.twimg.com/ext_tw_video/1637717820829040640/pu/pl/320x320/n4bRQzkHKNs3Pz08.m3u8?container=fmp4</string>
 <!---->
 </resources>
