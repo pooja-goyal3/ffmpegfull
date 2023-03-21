@@ -78,13 +78,7 @@ public class FfmpegActivity extends Activity implements View.OnClickListener, Pe
                     webAddress = new WebAddress(inputFile);
                     webAddress.setPath(encodePath(webAddress.getPath()));
                     String urlString = inputFile;
-                    ffmpegTask(urlString, outfile, new FfmpegListener(){
-
-                        @Override
-                        public void sendResult(String s) {
-                            addTextViewToLayout(s);
-                        }
-                    });
+                    ffmpegTask(urlString, outfile, s -> addTextViewToLayout(s));
                 }
                 catch (Exception e) {
                     // This only happens for very bad urls, we want to catch the
