@@ -18,7 +18,7 @@
         android:theme="@style/Theme.FfmpegFull">
 
             <activity
-                android:name=".FfmpegActivity"
+                android:name=".MainActivity"
                 android:label="@string/app_name"
                 android:exported="true">
                 <intent-filter>
@@ -27,6 +27,16 @@
                     <category android:name="android.intent.category.LAUNCHER" />
                 </intent-filter>
             </activity>
+
+        <activity
+            android:name=".FfmpegActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".FfmpegAudioActivity"
+            android:exported="true">
+        </activity>
 
         </application>
 
