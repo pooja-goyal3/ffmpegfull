@@ -26,7 +26,7 @@ public class FfmpegConv {
     }
 
     static void ffmpegAudio(String inputFile, String outFile, FfmpegListener listener) {
-        String ffmpegCommand = "-y -i " + inputFile + " -vn " + outFile;
+        String ffmpegCommand = "-i " + inputFile + " -vn " + outFile;
         ExecutorService myExecutor = Executors.newFixedThreadPool(8);
 
         long executionId = executeAsync(ffmpegCommand, (executionId1, returnCode) -> {
